@@ -1,6 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Router, RouterEvent } from '@angular/router';
-import { Subject } from 'rxjs/internal/Subject';
+import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
@@ -20,6 +20,11 @@ export class SideMenuPage implements OnDestroy {
       title: 'List',
       url: '/main/list',
       icon: 'list'
+    },
+    {
+      title: 'Logout',
+      url: '/',
+      icon: 'log-out'
     }
   ];
 

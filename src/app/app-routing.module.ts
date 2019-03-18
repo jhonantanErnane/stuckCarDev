@@ -9,11 +9,15 @@ const routes: Routes = [
   },
   {
     path: 'landing',
-    loadChildren: './landing/landing/landing.module#LandingPageModule'
+    loadChildren: './landing/landing.module#LandingPageModule'
   },
   {
     path: 'main',
     loadChildren: './side-menu/side-menu.module#SideMenuModule'
+  },
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginPageModule'
   }
 ];
 
@@ -21,4 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
